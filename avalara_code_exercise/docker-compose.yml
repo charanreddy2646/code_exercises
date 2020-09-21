@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  node-server:
+    build: ./
+    container_name: avalara-node-server
+    network_mode: bridge
+    restart: unless-stopped
+    ports:
+    - "49610:8080"

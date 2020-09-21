@@ -1,0 +1,36 @@
+{
+  "name": "avalara-node-server",
+  "description": "This is my code exercise assigned to me for the SRE role at Avalara.",
+  "version": "1.0.0",
+  "main": "myapp.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.wha.dev:robert/avalara_code_exercise.git"
+  },
+  "author": "Robert Jones",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.11.1",
+    "body-parser": "^1.19.0",
+    "request": "^2.88.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "cross-env": "^7.0.2",
+    "jest": "^26.1.0",
+    "mocha": "^2.4.5",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start-dev": "nodemon myapp.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "pretest": "cross-env NODE_ENV=test"
+  }
+}
