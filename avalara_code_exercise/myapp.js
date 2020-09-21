@@ -25,7 +25,7 @@ const options = {
     headers: {
       'Content-Type': 'application/json',
 // Replace with your SignalFX org token if necessary
-      'X-SF-TOKEN': 'rrQocVjveDNdxzmY6EP3rQ',
+      'X-SF-TOKEN': 'YOUR-KEY-HERE',
     },
     body: [{
         category: 'USER_DEFINED',
